@@ -19,13 +19,14 @@ const main = async () => {
 
         const body = req.body
         
+        const phoneNumber = body.phoneNumber
         const message = body.message
         const mediaUrl = body.mediaUrl
 
-        await bot.sendMessage('51959681467', message, {
+        await bot.sendMessage(phoneNumber, message, {
             media: mediaUrl
         })
-        res.end('Esto es del server de polka')
+        res.end('El mensaje fue enviado correctamente!')
     }))
 
     await createBot({
