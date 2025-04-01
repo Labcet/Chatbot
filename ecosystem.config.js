@@ -3,7 +3,7 @@ export default {
   apps : [
     {
       name: "chatbot-api",
-      script: "./src/app.ts",
+      script: "./src/app.js",
       watch: true,
       max_memory_restart: "1000M",
       exec_mode: "cluster",
