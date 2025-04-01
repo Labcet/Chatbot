@@ -1,4 +1,5 @@
-module.exports = {
+//module.exports = {
+export default {
   apps : [
     {
       name: "chatbot-api",
