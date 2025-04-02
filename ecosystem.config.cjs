@@ -2,8 +2,8 @@ module.exports = {
   apps : [
     {
       name: "chatbot-api",
-      script: "./src/app.js",
-      watch: true,
+      script: "./dist/app.js",
+      watch: false,
       max_memory_restart: "1000M",
       exec_mode: "cluster",
       instances: "1",
